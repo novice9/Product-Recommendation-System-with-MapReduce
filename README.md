@@ -2,11 +2,20 @@
 
 Raw Data:
 
+Input data are the customer's rating of product
+<customerId>:<productId>/t<rating>
 
 Source Code:
 
+This progrm include 5 MapReduce jobs: ItemByUserMR, ItemRelationMR, NormCoOccurMR, MatrixMultMR and UnitSumMR.
+The first 3 jobs (ItemByUserMR, ItemRelationMR and NormCoOccurMR) extract the item-to-item collaboration and build the co-occurrence matrix. The last 2 jobs (MatrixMultMR and UnitSumMR) implement the matrix multiplication and output the recommendation factor of each product to each customer.
 
 Result:
+
+Output data is a table list out the recommendation factor for customer-product pair
+<customerId>:<productId>/t<recommendationFactor>
+
+The higher the factor, the more recommended the product to that customer
 
 --------------------------------------------------
 How to run Hadoop MapReduce:
