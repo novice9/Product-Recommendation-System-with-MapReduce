@@ -1,4 +1,4 @@
-# Recommendation-System-with-MapReduce
+# Product Recommendation-System-with-MapReduce
 
 Raw Data:
 
