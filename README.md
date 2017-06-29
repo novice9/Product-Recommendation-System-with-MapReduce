@@ -3,7 +3,8 @@
 Raw Data:
 
 Input data are the customer's rating of product
-<customerId>:<productId>/t<rating>
+
+< customerId > : < productId > /t < rating >
 
 Source Code:
 
@@ -13,7 +14,8 @@ The first 3 jobs (ItemByUserMR, ItemRelationMR and NormCoOccurMR) extract the it
 Result:
 
 Output data is a table list out the recommendation factor for customer-product pair
-<customerId>:<productId>/t<recommendationFactor>
+
+< customerId > : < productId > /t < recommendationFactor >
 
 The higher the factor, the more recommended the product to that customer
 
